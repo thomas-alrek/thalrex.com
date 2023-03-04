@@ -1,0 +1,10 @@
+@import "variables";
+@import "typography";
+@import "~bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
