@@ -14,24 +14,24 @@
 <template>
     <div class="HomePage">
         
-        <Noise>
-                <div class="container pb-5">
-                    <ScrollParallax :speed="0.3" style="z-index: 1">
-                        <div class="pt-5 mb-5 row d-flex justify-content-center" style="z-index: 10">
-                            <div class="col-12 col-lg-6">
-                                <img :src="textLogo" class="img-fluid" alt="THALREX">
-                            </div>
-                        </div>
-                    </ScrollParallax>
-                    
-                    <div class="row position-relative" style="z-index: 1000">
-                        <div class="col-12">
-                            <Spotify class="mb-3" :src="SPOTIFY_URL" />
-                        </div>
+        <div class="container pb-5">
+            <ScrollParallax :speed="0.3" style="z-index: 1">
+                <div class="pt-5 mb-5 row d-flex justify-content-center" style="z-index: 10">
+                    <div class="col-12 col-lg-6">
+                        <img :src="textLogo" class="img-fluid" alt="THALREX">
                     </div>
                 </div>
-            <NewsletterSignup />
-        </Noise>
+            </ScrollParallax>
+            
+            <div class="row position-relative" style="z-index: 1000">
+                <div class="col-12">
+                    <Spotify class="mb-3" :src="SPOTIFY_URL" />
+                </div>
+            </div>
+        </div>
+        
+        <NewsletterSignup />
+
     </div>
 </template>
 
